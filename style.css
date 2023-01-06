@@ -1,0 +1,60 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+  --tempUnit: "°C"
+}
+form{
+  text-align: end;
+  padding: 30px;
+}
+input[type="text"]{
+  border: 0;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 10px;
+  padding-left: 25px;
+}
+input:focus{
+  border: 0;
+  outline: 0;
+}
+.card{
+  padding-left: 30px;
+}
+#feels{
+  margin-top: 30px;
+}
+#weather-desc{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+#location{
+  font-size: 2rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,200px);
+  gap: 10px;
+  justify-items: center;
+}
+#side-info-container{
+  justify-content: center;
+}
+#temp{
+  font-size: 8rem;
+  margin: 0;
+  position: relative;
+}
+#temp::after{
+  content: var(--tempUnit);
+  display: block;
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0;
+  right: -30px;
+}
